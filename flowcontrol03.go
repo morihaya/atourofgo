@@ -1,6 +1,12 @@
 package main
 
+import "fmt"
+
 func main() {
-	for {
+	sum := 1
+	for sum < 1000 {
+		sum += sum
+		fmt.Println("sum = ", sum)
 	}
+	fmt.Println(sum)
 }
